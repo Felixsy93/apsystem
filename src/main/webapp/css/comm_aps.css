@@ -1,0 +1,297 @@
+﻿/*
+사용처
+Main Master 페이지
+*/
+
+input[type=text]::-ms-clear {display: none;}
+/*
+[disabled].form-control, [readonly].form-control
+{
+	background-color: rgb(242,242,242);
+}
+*/
+
+/* box */
+.grp-box
+{
+	background-color: white;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius:.25rem;
+	margin-bottom: 1rem !important;
+	padding:.7rem .7rem .2rem .7rem;
+}
+
+/* 사용자정보 */
+.pop-user
+{
+	border: 1px solid lightgray;
+	border-left: hidden;
+	border-right: hidden;
+	font-size: 13px;
+}
+.pop-user tr,
+.pop-user td
+{
+	border: 1px solid lightgray;
+	padding: 5px;
+}
+.pop-user th
+{
+	border: 1px solid lightgray;
+	padding: 5px;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+
+/* 조회조건 */
+.table-search
+{
+	/*border-bottom: 1px solid #dee2e6;*/
+	border: 0;
+	margin: 0;
+}
+.table-search td
+{
+	border: 0;
+}
+.table-search th
+{
+	border: 0;
+	text-align: right;
+	vertical-align: middle;
+}
+.label-title
+{
+	display: table-cell;
+	width: 80px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0.87rem;
+	padding: .25rem .5rem;
+}
+.label-nec
+{
+	background-color: mistyRose;
+}
+
+/* 데이터 */
+.frm-table
+{
+	border: 0;
+	margin: 0;
+}
+.frm-table td
+{
+	border: 0;
+}
+.frm-table th
+{
+	border: 0;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.grd-table
+{
+	width: 100%;
+	font-size: small;
+}
+.grd-table tr.selected
+{
+	color: white !important;
+	background-color: skyblue !important;
+}
+.grd-table th
+{
+	text-align: center;
+}
+.grd-table td
+{
+	vertical-align: middle;
+}
+.grd-table-key
+{
+	font-weight: 400;
+	/*color: #007bff;*/
+	background-color: transparent;
+	cursor: pointer;
+}
+.grd-table-key:hover
+{
+	color: #0056b3;
+	text-decoration: underline;
+	background-color: transparent;
+	border-color: transparent;
+}
+.grd-table-text
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 200px;
+	vertical-align: middle;
+	display: block;
+}
+.grd-table-badge
+{
+	font-size: 100%;
+	font-weight: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.btn-grd-attach
+{
+	line-height: 1.15;
+	padding: 0 0.25rem;
+	font-size: small;
+}
+
+.lbl-datetime
+{
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.frm-datetime
+{
+	padding: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/* 코드헬프 컬럼 */
+.code-help
+{
+	background-color: skyblue;
+}
+
+input.code-help-place::-webkit-input-placeholder
+{
+	color: white;
+}
+input.code-help-place::-moz-placeholder
+{
+	color: white;
+}
+input.code-help-place:-moz-placeholder
+{
+	color: white;
+}
+input.code-help-place:-ms-input-placeholder
+{
+	color: white;
+}
+
+.btn-help
+{
+	border: 1px solid #ced4da;
+	/*background-color:#E9ECEF;*/
+}
+
+/* 첨부파일 */
+.file-table
+{
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+.file-table td
+{
+	border: 0;
+	padding-left: .3rem;
+}
+.file-table th
+{
+	border: 0;
+	text-align: right;
+	vertical-align: top;
+	padding-right: .3rem;
+}
+
+.file-droparea
+{
+	width: 100%;
+	height: 200px;
+	border-bottom: 1px solid lightgray;
+	margin-top: 0.5rem;
+}
+
+.file-dragtext
+{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	text-align: center;
+	line-height: 200px;
+	vertical-align: middle;
+	background-color: rgba(173, 216, 230, 0.30);
+}
+
+
+/* etc */
+.btn-cate
+{
+	width: 140px;
+	height: 50px;
+	margin-bottom: 2px;
+}
+.link-board
+{
+	font-size: .8rem;
+	font-weight: normal;
+}
+
+/* color */
+.apcolor-header
+{
+	background-color: #e8eaed;
+}
+.apcolor-blue
+{
+	background-color: #c6ebfe !important;
+}
+.apcolor-green
+{
+	background-color: #beffbf !important;
+}
+.apcolor-yellow
+{
+	background-color: #f5ff9e !important;
+}
+.apcolor-red
+{
+	background-color: #ffbebe !important;
+}
+
+.load-img
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	margin: -75px 0 0 -75px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	-webkit-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes spin
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

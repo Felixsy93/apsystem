@@ -1,0 +1,51 @@
+/*
+방문자예약관리
+*/
+
+/* default */
+#vst_header { padding-top: 30px; text-align: center !important; }
+#vst_header a:hover { text-decoration: none; }
+#vst_header span { vertical-align: middle; font-weight: bold; color: #003866; }
+#vst_title { text-align: center !important; }
+#vst_title p { margin-top: 1rem !important; font-size: 25px; color: gray; }
+#vst_login { position: absolute; right: 0; z-index: 900; }
+
+.vst-btn { width: 300px; height: 300px; margin: 40px 0 0 0; font-size: 36px; font-weight: 700; }
+.btn-grp { margin-bottom: 3rem !important; text-align: center; }
+.menu-title { margin: 1rem !important; color: #003866; }
+
+/* agree */
+.agree-grp { margin-top: 2rem !important; margin-bottom: 2rem !important; }
+.agree-box { width:100%; height:240px; overflow:auto; border:solid 1px #ddd; background-color:#f9f9f9; padding:10px; margin-bottom:8px; font-size: 13px; }
+
+.agree-text { padding: .5rem .5rem .0rem .5rem !important; }
+.agree-text-1 { padding: .5rem .5rem .0rem 1.5rem !important; text-indent: -1rem; }
+.agree-text-2 { padding-left: 2.5rem !important; text-indent: -1rem; font-weight:bold; }
+.agree-text-3 { padding-left: 2rem !important; }
+.agree-check { font-size: 13px; }
+
+/* write */
+#write_main { display: flex; justify-content:center; }
+#write_info { width: 100%; padding: 20px 10px 10px 10px; margin-bottom:20px; border:solid 1px #ddd; background-color:#f9f9f9; }
+
+.write-icon { color:maroon; }
+.write-title { width:280px; padding-left:15px; padding-right:15px; margin-bottom:.5rem; }
+.write-title-sm { width:200px; padding-left:15px; padding-right:15px; margin-bottom:.5rem; }
+.write-title-lg { width:367px; padding-left:15px; padding-right:15px; margin-bottom:.5rem; }
+.write-title-xl { width:410px; padding-left:15px; padding-right:15px; margin-bottom:.5rem; }
+.write-value { width:200px; padding-left:15px; padding-right:15px; margin-bottom:.5rem; }
+.write-value-sm { width:100px; padding-left:15px; padding-right:15px; margin-bottom:.5rem; }
+.write-desc { margin-left: 5px; color:dimgray; font-size:.87rem; }
+.write-desc-out { margin-left: 5px; color:dimgray; font-size:.87rem; }
+
+/* write_goods */
+#goods_list { overflow:auto; }
+
+.grd-goods { font-size:13px; }
+
+/* board */
+.board-no { width:100px; }
+.board-text { width:120px; }
+.board-content { width:100%; padding: .7rem .7rem .7rem .7rem; margin-top: 1rem; white-space:pre-line;  border: 1px solid rgba(0,0,0,.125); border-radius:.25rem; }
+.board-page-no { padding:3px; font-family:verdana; font-size:14px; color:#878787; }
+.board-page-cur { padding:3px; font-family:verdana; font-size:15px; }
