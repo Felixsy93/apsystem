@@ -282,6 +282,7 @@ $('#btn_re').on('click', function ()
 
 	var move_param = new Array();
 	move_param.push(['mode', 'r']);
+	move_param.push(['agree_yn', 'Y']);
 	move_param.push(['vstcode', select_data[0].vst_code]);
 
 	MovePage("visit_write.jsp", move_param);
