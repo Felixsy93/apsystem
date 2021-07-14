@@ -469,6 +469,10 @@
 	        	$('#vst_code').val('<%=vst_code%>');
 	        }
 	        $('#agree_yn').val('<%=agree_yn%>');
+	        
+	        if($('#agree_yn').val() != 'Y'){
+	        	location.href = "visit_agree.jsp";
+	        }
 	    });
 
 	</script>
