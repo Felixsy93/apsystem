@@ -432,6 +432,7 @@
 					<!-- 보안물품 Start -->
 					<div class="mb-2">
 						<button name="btn_goods_1" id="btn_goods_1" type="button" class="btn btn-sm btn-outline-secondary mb-2" onclick="SetModalOpen(1)"><i class="fa fa-laptop"></i> 보안물품등록</button>
+						<span class="write-desc-out">※ AP시스템 본사(동탄1사업장) 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착</span>
 						<div style="display:none;">
 							<input name="goods_cnt_1" id="goods_cnt_1" type="text" />
 						</div>
