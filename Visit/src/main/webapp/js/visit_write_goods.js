@@ -129,6 +129,15 @@ function goodsDel(p_goods_no)
 // 등록 버튼
 $('#btn_goods_ok').on('click', function ()
 {
+	if (m_goods_cnt == 0)
+    {
+        if (IsEmpty($('#goods_name').val()) == false || IsEmpty($('#goods_desc').val()) == false)
+        {
+            alert('추가 버튼을 눌러 보안물품을 등록 하세요.');
+            return;
+        }   
+    }
+    
 	var sList = '';
 	if (m_goods_cnt > 0)
 	{
