@@ -116,7 +116,7 @@
 						<div class="col-sm-6 mb-2">
 							<div class="input-group input-group-sm">
 								<div class="input-group-prepend">
-									<span class="input-group-text label-title">시리얼번호</span>
+									<span class="input-group-text label-title label-nec">시리얼번호</span>
 								</div>
 								<input name="goods_serl" id="goods_serl" type="text" class="form-control" maxlength="100" />
 							</div>

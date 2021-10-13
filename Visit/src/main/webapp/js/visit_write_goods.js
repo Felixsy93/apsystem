@@ -69,6 +69,12 @@ $('#btn_goods_add').on('click', function ()
 		$('#goods_qty').focus();
 		return;
 	}
+	else if (IsEmpty($('#goods_serl').val()) == true)
+	{
+		alert('시리얼번호가 입력되지 않았습니다.');
+		$('#goods_serl').focus();
+		return;
+	}
 	else if (IsEmpty($('#goods_desc').val()) == true)
 	{
 		alert('사용목적이 입력되지 않았습니다.');

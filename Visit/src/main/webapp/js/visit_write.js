@@ -50,7 +50,7 @@ var goodsList = [
 	{ col: 'goods_item',		name: '품목',			detail: '1',	save: '1',	check: '1',	encode: '0',	type: ''		},
 	{ col: 'goods_name',		name: '품명(모델명)',	detail: '1',	save: '1',	check: '1',	encode: '1',	type: ''		},
 	{ col: 'goods_qty',			name: '수량',			detail: '1',	save: '1',	check: '1',	encode: '0',	type: ''		},
-	{ col: 'goods_serl',		name: '시리얼번호',	detail: '1',	save: '1',	check: '0',	encode: '1',	type: ''		},
+	{ col: 'goods_serl',		name: '시리얼번호',	detail: '1',	save: '1',	check: '1',	encode: '1',	type: ''		},
 	{ col: 'goods_desc',		name: '사용목적',		detail: '1',	save: '1',	check: '1',	encode: '1',	type: ''		}
 ];
 
