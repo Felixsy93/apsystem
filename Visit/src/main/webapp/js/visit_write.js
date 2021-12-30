@@ -79,9 +79,8 @@ $(document).ready(function ()
 	}
 
 	// 수정여부
-	$('input, select').change(function ()
-	{
-		m_mod_yn = 'Y';
+	$(document).on("change", "input, select", function (){
+	    m_mod_yn = 'Y';
 	});
 	
 	$("#modal_mst, #modal_help").draggable({
@@ -547,7 +546,7 @@ function vstAdd()
 				'<div class="write-title-sm">' +
 					'<div class="input-group input-group-sm">' +
 						'<div class="input-group-prepend">' +
-							'<span class="input-group-text label-title">외국체류 이력</span>' +
+							'<span style="width:106px" class="input-group-text label-title">외국체류 이력</span>' +
 						'</div>' +
 						'<select name="vst_infec_yn_' + m_max_num + '" id="vst_infec_yn_' + m_max_num + '" class="form-control">' +
 							'<option value="N" selected="selected">N</option>' +
