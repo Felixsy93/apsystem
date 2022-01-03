@@ -7,6 +7,7 @@
 	Vector<TBas_Code_DTO> vst_good_inout_list = tbasdao.getAllDatas("VST_GOODS_INOUT");
 	Vector<TBas_Code_DTO> vst_good_type_list = tbasdao.getAllDatas("VST_GOODS_TYPE");
 	
+	String m_sMode = request.getParameter("mode");
 	String vst_no = request.getParameter("p_no");
 	String goods_cnt = request.getParameter("p_cnt");
 %>
@@ -52,9 +53,19 @@
 									<%
 									for(int i = 0; i<vst_good_type_list.size(); i++){
 										TBas_Code_DTO dto = vst_good_type_list.get(i);
+										
+										if(m_sMode.equals("v")) 
+										{
 									%>
-										<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
 									<%
+										}
+										else if(m_sMode.equals("s") && dto.getUse_yn().equals("Y"))
+										{
+									%>
+											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+									<%			
+										}
 									}
 									%>
 								</select>
@@ -69,9 +80,19 @@
 									<%
 									for(int i = 0; i<vst_good_inout_list.size(); i++){
 										TBas_Code_DTO dto = vst_good_inout_list.get(i);
+										
+										if(m_sMode.equals("v")) 
+										{
 									%>
-										<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
 									<%
+										}
+										else if(m_sMode.equals("s") && dto.getUse_yn().equals("Y"))
+										{
+									%>
+											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+									<%			
+										}
 									}
 									%></select>
 							</div>
@@ -87,9 +108,19 @@
 									<%
 									for(int i = 0; i<vst_good_item_list.size(); i++){
 										TBas_Code_DTO dto = vst_good_item_list.get(i);
+										
+										if(m_sMode.equals("v")) 
+										{
 									%>
-										<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
 									<%
+										}
+										else if(m_sMode.equals("s") && dto.getUse_yn().equals("Y"))
+										{
+									%>
+											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+									<%			
+										}
 									}
 									%>
 								</select>

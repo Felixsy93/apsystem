@@ -148,12 +148,11 @@ function enter_press()
 // 모달 오픈
 function SetModalOpen(p_vst_no)
 {
-
 	var modal_width = window.screen.width < 800 ? window.screen.width : 800;
 	var modal_height = window.screen.height < 480 ? window.screen.height * 0.85 : 480;
 	
 	var modal_url = "visit_write_goods.jsp";
-	var modal_param = "p_width=" + modal_width + "&p_height=" + modal_height + "&p_no=" + p_vst_no;
+	var modal_param = "p_width=" + modal_width + "&p_height=" + modal_height + "&mode="+ m_mode +"&p_no=" + p_vst_no;
 
 	if ($('#goods_cnt_' + p_vst_no).val() > 0)
 		modal_param += "&p_cnt=" + $('#goods_cnt_' + p_vst_no).val();
@@ -887,7 +886,20 @@ function SaveBtn()
 		
 		if (save_result.result == 1){
 			alert('신청 되었습니다. 조회화면으로 이동합니다.');
-			location.href = 'visit_view.jsp';
+			//location.href = 'visit_view.jsp';
+			
+			var list_param = new Array();
+			
+			// 조회조건
+			list_param.push(['list_opt', 'Y']);
+			list_param.push(['opt_beg_date', $('#beg_date').val()]);
+			list_param.push(['opt_end_date', $('#end_date').val()]);
+			list_param.push(['opt_vst_name', encodeURI($('#vst_name_1').val())]);
+			list_param.push(['opt_vst_birth', $('#vst_birth_1').val()]);
+			list_param.push(['opt_vst_tel', $('#vst_tel_1').val()]);
+			
+			MovePage("visit_view.jsp", list_param);
+			
 		}else if(save_result.result == -1){
 			alert('저장 중 오류가 발생했습니다.\n다시 시도하시기 바랍니다.');
 		}

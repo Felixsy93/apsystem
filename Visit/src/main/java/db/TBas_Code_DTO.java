@@ -4,6 +4,7 @@ public class TBas_Code_DTO {
 	private String b_id;
 	private String b_code;
 	private String b_name;
+	private String use_yn;
 	
 	public String getB_id() {
 		return b_id;
@@ -22,5 +23,11 @@ public class TBas_Code_DTO {
 	}
 	public void setB_name(String b_name) {
 		this.b_name = b_name;
+	}
+	public String getUse_yn() {
+		return use_yn;
+	}
+	public void setUse_yn(String use_yn) {
+		this.use_yn = use_yn;
 	}
 }

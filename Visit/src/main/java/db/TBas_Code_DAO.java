@@ -20,6 +20,7 @@ public class TBas_Code_DAO {
 				dto.setB_code(md.rs.getString("b_code"));
 				dto.setB_id(md.rs.getString("b_id"));
 				dto.setB_name(md.rs.getString("b_name"));
+				dto.setUse_yn(md.rs.getString("use_yn"));
 
 				TBas_Code_list.add(dto);
 			}

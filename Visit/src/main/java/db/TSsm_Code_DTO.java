@@ -6,6 +6,7 @@ public class TSsm_Code_DTO {
 	private String s_code;
 	private String s_name;
 	private String s_val1;
+	private String use_yn;
 	
 	public String getS_id() {
 		return s_id;
@@ -31,5 +32,12 @@ public class TSsm_Code_DTO {
 	public void setS_val1(String s_val1) {
 		this.s_val1 = s_val1;
 	}
+	public String getUse_yn() {
+		return use_yn;
+	}
+	public void setUse_yn(String use_yn) {
+		this.use_yn = use_yn;
+	}
+
 	
 }
