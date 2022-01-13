@@ -35,6 +35,7 @@
 <%
 
 /* 
+1
 String popup_yn = "";
 String popup_notice_code = "";
 TVst_Notice_DAO notice = new TVst_Notice_DAO(); 
