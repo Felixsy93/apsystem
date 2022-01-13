@@ -10,6 +10,7 @@
 	String m_sMode = request.getParameter("mode");
 	String vst_no = request.getParameter("p_no");
 	String goods_cnt = request.getParameter("p_cnt");
+	String corp_no = request.getParameter("corp_no");
 %>
 <!DOCTYPE html>
 <html>
@@ -162,7 +163,11 @@
 	
 					<div class="mb-2">
 						<span class="write-desc-out">※ 시리얼번호는 자산번호 등 기타 식별번호로 대체 가능합니다.</span><br>
-						<span class="write-desc-out">※ 보안물품정보 입력 후 반드시 추가 버튼을 눌러주세요.</span>
+						<span class="write-desc-out">※ 보안물품정보 입력 후 반드시 추가 버튼을 눌러주세요.</span><br>
+						<% if(corp_no.equals("22")){ %>
+						<span class="write-desc-out" style="color:red; font-weight:bold;">※ 화학물질 반입 시 필수 사항.</span><br>&nbsp;&nbsp;&nbsp;
+						<span class="write-desc-out" style="color:red; font-weight:bold;">- 보호구 업체별 필수 지참, 화학물질명, 물질수량, 반입물질사용인원 작성 후 출입</span>
+						<%} %>
 					</div>
 	
 					<div class="mb-2">

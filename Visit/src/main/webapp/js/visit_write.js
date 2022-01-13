@@ -152,7 +152,7 @@ function SetModalOpen(p_vst_no)
 	var modal_height = window.screen.height < 480 ? window.screen.height * 0.85 : 480;
 	
 	var modal_url = "visit_write_goods.jsp";
-	var modal_param = "p_width=" + modal_width + "&p_height=" + modal_height + "&mode="+ m_mode +"&p_no=" + p_vst_no;
+	var modal_param = "p_width=" + modal_width + "&p_height=" + modal_height + "&mode="+ m_mode +"&p_no=" + p_vst_no + "&corp_no="+ $('#corp_no').val();
 
 	if ($('#goods_cnt_' + p_vst_no).val() > 0)
 		modal_param += "&p_cnt=" + $('#goods_cnt_' + p_vst_no).val();
@@ -260,6 +260,11 @@ $('#long_term').on('change', function ()
 // 방문회사 변경 시 방문사업장 리스트 변경
 $('#corp_no').on('change', function ()
 {
+	if($('#corp_no').val() == '22')
+		$('#dent_inoutlist').show();
+	else
+		$('#dent_inoutlist').hide();
+		
 	//set_ComboHtml('corp_fac_no', 'S', 'VST_CORP_FAC', 0, [$('#corp_no').val()], '회사를 선택하세요');
 
 	// 사원, 부서 초기화

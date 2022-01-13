@@ -335,6 +335,7 @@
 							<input name="input_ur_code" id="input_ur_code" type="text" class="form-control" style="display:none" />
 						</div>
 					</div>
+					<a id="dent_inoutlist" style="display:none" href="https://vst.apsfamily.com//uploadfile/vst/DENT_InoutList.xlsx" target="_blank">자재(공구) 반입.반출 확인서</a>
 				</div>
 				<!-- 방문 예약 정보 End -->
 				
