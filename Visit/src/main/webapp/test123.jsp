@@ -33,7 +33,7 @@
               <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
             </div>
 <%
-1
+
 /* 
 String popup_yn = "";
 String popup_notice_code = "";
