@@ -20,6 +20,18 @@
 			<!-- 에디터 -->
 			<textarea name="svc_content" id="svc_content" runat="server" rows="10" cols="100" style="min-width:200px; width:100%;height:340px; display:none;"></textarea>
 		</div>
+		
+		<td rowspan="2" colspan="2"><textarea class="form-control rounded-0" name="svc_add_content1" id="Textarea1" runat="server"></textarea></td>
+
+            <div class="form-group purple-border">
+              <label for="exampleFormControlTextarea4">Colorful border</label>
+              <textarea class="form-control" id="exampleFormControlTextarea4" rows="3"></textarea>
+            </div>
+
+            <div class="form-group green-border-focus">
+              <label for="exampleFormControlTextarea5">Colorful border on :focus state</label>
+              <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+            </div>
 <%
 
 /* 
