@@ -261,9 +261,20 @@ $('#long_term').on('change', function ()
 $('#corp_no').on('change', function ()
 {
 	if($('#corp_no').val() == '22')
+	{
 		$('#dent_inoutlist').show();
+		$('#write-desc-out1').hide();
+		$('#write-desc-out2').show();
+		$('#write-desc-out3').show();
+	}
+		
 	else
+	{
 		$('#dent_inoutlist').hide();
+		$('#write-desc-out1').show();
+		$('#write-desc-out2').hide();
+		$('#write-desc-out3').hide();
+	}
 		
 	//set_ComboHtml('corp_fac_no', 'S', 'VST_CORP_FAC', 0, [$('#corp_no').val()], '회사를 선택하세요');
 
@@ -462,10 +473,18 @@ function vstAdd()
 {
 	m_max_num++;
 
+	var desc_text = '';
 	var vip_nec = ' label-nec';
+	
 	if ($('#vst_type').val() == '3')
 		vip_nec = '';
 
+	if($('#corp_no').val() == '22')
+		desc_text = '※ 디이엔티 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착(화학물질 반입 시 필수 사전등록)';
+	else
+		desc_text = '※ AP시스템 본사(동탄1사업장) 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착';
+	
+	
 	var vst_html =
 		'<div id="vst_' + m_max_num + '" class="grp-box">' +
 			'<div id="vst_title_' + m_max_num + '" class="mb-2">' +
@@ -589,7 +608,7 @@ function vstAdd()
 
 			'<div class="mb-2">' +
 				'<button name="btn_goods_' + m_max_num + '" id="btn_goods_' + m_max_num + '" type="button" class="btn btn-sm btn-outline-secondary mb-2" onclick="SetModalOpen(' + m_max_num + ')"><i class="fa fa-laptop"></i> 보안물품등록</button>' +
-				'<span class="write-desc-out">※ AP시스템 본사(동탄1사업장) 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착</span>' + 
+				'<span class="write-desc-out">' + desc_text + '</span>' + 
 				'<div style="display:none;">' +
 					'<input name="goods_cnt_' + m_max_num + '" id="goods_cnt_' + m_max_num + '" type="text" />' +
 				'</div>' +
@@ -1131,6 +1150,22 @@ function GetSearch()
 		m_mod_ur = 'N';
 	}
 	
+	if(corp_no == '22')
+	{
+		$('#dent_inoutlist').show();
+		$('#write-desc-out1').hide();
+		$('#write-desc-out2').show();
+		$('#write-desc-out3').show();
+	}
+		
+	else
+	{
+		$('#dent_inoutlist').hide();
+		$('#write-desc-out1').show();
+		$('#write-desc-out2').hide();
+		$('#write-desc-out3').hide();
+	}
+		
 	m_load_yn = 'N';
 	
 	set_Loading('hide');

@@ -335,7 +335,12 @@
 							<input name="input_ur_code" id="input_ur_code" type="text" class="form-control" style="display:none" />
 						</div>
 					</div>
-					<a id="dent_inoutlist" style="display:none" href="https://vst.apsfamily.com//uploadfile/vst/DENT_InoutList.xlsx" target="_blank">자재(공구) 반입.반출 확인서</a>
+					<div class="row">
+						<div class="col">
+							<a id="dent_inoutlist" class="btn btn-success" style="display:none; font-size:0.9em; color:white;" href="https://vst.apsfamily.com//uploadfile/vst/DENT_InoutList.xlsx" target="_blank">자재(공구) 반입.반출 확인서</a>
+							<span id="write-desc-out3" class="write-desc-out" style="display:none;">※ 자재(공구) 반입 시 확인서 작성 후 보안실 제출(필수)</span>		
+						</div>
+					</div>
 				</div>
 				<!-- 방문 예약 정보 End -->
 				
@@ -466,7 +471,8 @@
 					<!-- 보안물품 Start -->
 					<div class="mb-2">
 						<button name="btn_goods_1" id="btn_goods_1" type="button" class="btn btn-sm btn-outline-secondary mb-2" onclick="SetModalOpen(1)"><i class="fa fa-laptop"></i> 보안물품등록</button>
-						<span class="write-desc-out">※ AP시스템 본사(동탄1사업장) 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착</span>
+						<span id="write-desc-out1" class="write-desc-out">※ AP시스템 본사(동탄1사업장) 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착</span>
+						<span id="write-desc-out2" class="write-desc-out" style="display:none;">※ 디이엔티 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착(화학물질 반입 시 필수 사전등록)</span><br />
 						<div style="display:none;">
 							<input name="goods_cnt_1" id="goods_cnt_1" type="text" />
 						</div>
