@@ -7,7 +7,7 @@
 <%
 	String cur_vst_code = (String)request.getParameter("vst_code");
 	HttpConnection http = new HttpConnection();
-	String url = "http://10.1.1.76:55521/util/visit_interface.aspx?sp_name=dbo.sp_visit_interface_delete&if_vst_code=" + cur_vst_code +"&if_flag=D";
+	String url = "http://10.1.1.89:55531/util/visit_interface.aspx?sp_name=dbo.sp_visit_interface_delete&if_vst_code=" + cur_vst_code +"&if_flag=D";
 	//String url = "https://vst.apsfamily.com/util/visit_interface.aspx?sp_name=dbo.sp_visit_interface_delete&if_vst_code=" + cur_vst_code +"&if_flag=D";
 	String if_result = http.sendGet(url);
 

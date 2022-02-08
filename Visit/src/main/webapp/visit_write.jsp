@@ -208,19 +208,10 @@
 									<%
 									for(int i = 0; i < vst_corp_list.size(); i++){
 										TSsm_Code_DTO dto = vst_corp_list.get(i);
-										
-										if(m_sMode.equals("v")) 
-										{
+
 									%>
-											<option value=<%=dto.getS_code() %>><%=dto.getS_name() %></option>
-									<%
-										}
-										else if(m_sMode.equals("s") && dto.getUse_yn().equals("Y"))
-										{
-									%>
-											<option value=<%=dto.getS_code() %>><%=dto.getS_name() %></option>
+										<option value=<%=dto.getS_code() %>><%=dto.getS_name() %></option>
 									<%			
-										}
 									}
 									%>
 								</select>
@@ -245,19 +236,9 @@
 									<%
 									for(int i = 0; i < vst_place_list.size(); i++){
 										TBas_Code_DTO dto = vst_place_list.get(i);
-
-										if(m_sMode.equals("v")) 
-										{
 									%>
-											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
-									<%
-										}
-										else if(m_sMode.equals("s") && dto.getUse_yn().equals("Y"))
-										{
-									%>
-											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+										<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
 									<%			
-										}
 									}
 									%>
 								</select>	
@@ -276,18 +257,9 @@
 									for(int i = 0; i < vst_type_list.size(); i++){
 										TBas_Code_DTO dto = vst_type_list.get(i);
 
-										if(m_sMode.equals("v")) 
-										{
 									%>
-											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
-									<%
-										}
-										else if(m_sMode.equals("s") && dto.getUse_yn().equals("Y"))
-										{
-									%>
-											<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
+										<option value=<%=dto.getB_code() %>><%=dto.getB_name() %></option>
 									<%			
-										}
 									}
 									%>
 								</select>
