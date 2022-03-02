@@ -11,7 +11,7 @@
 	
 	sSearch = URLEncoder.encode(sSearch,"UTF-8");
 	HttpConnection http = new HttpConnection();
-	String url = "https://vst.apsfamily.com/util/visit_interface.aspx?sp_name=dbo.sp_popup_help_data&kind=vstur&type=a.emp_name&search=" + sSearch + "&option=" +sOption;
+	String url = "https://tis.apsfamily.com/util/visit_interface.aspx?sp_name=dbo.sp_popup_help_data&kind=vstur&type=a.emp_name&search=" + sSearch + "&option=" +sOption;
 	
 	String if_result = http.sendGet(url);
 
