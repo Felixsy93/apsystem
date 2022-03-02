@@ -59,6 +59,7 @@ var m_vst_cnt = 1;
 var m_mod_yn = 'Y';
 var m_mod_ur = 'Y';
 var m_load_yn = 'N';
+var isDisabled = false;
 
 $(document).ready(function ()
 {
@@ -658,29 +659,40 @@ function chgCar(p_num)
 // 저장 버튼
 $('#btn_save').off("click").on('click', function ()
 {
-	if (m_mod_ur == 'Y')
-	{
-		if ($('#ur_name').val() == '')
-			alert('담당직원을 선택해주세요.');
-		else
-			alert('담당직원이 변경되었습니다. 찾기 버튼을 눌러주세요.');
-
-		$('#ur_name').focus();
-		window.scrollTo(0, $('#ur_name').offset().top - 70);
+	if (isDisabled) // 중복저장 방지
+	{ 
+		alert("이미 작업이 수행중입니다.");
 		return;
 	}
-	else if ($('#agree_yn').val() != 'Y')
+	else
 	{
-		alert('개인정보제공 동의가 진행되지 않았습니다.\n이전 페이지에서 동의여부를 진행하세요.');
-		return;
+		isDisabled = true;
+		
+		if (m_mod_ur == 'Y')
+		{
+			if ($('#ur_name').val() == '')
+				alert('담당직원을 선택해주세요.');
+			else
+				alert('담당직원이 변경되었습니다. 찾기 버튼을 눌러주세요.');
+	
+			$('#ur_name').focus();
+			window.scrollTo(0, $('#ur_name').offset().top - 70);
+			return;
+		}
+		else if ($('#agree_yn').val() != 'Y')
+		{
+			alert('개인정보제공 동의가 진행되지 않았습니다.\n이전 페이지에서 동의여부를 진행하세요.');
+			return;
+		}
+		else if (m_mod_yn == 'N')
+		{
+			alert('변경사항이 없습니다.');
+			return;
+		}
+		
+		SaveBtn();
 	}
-	else if (m_mod_yn == 'N')
-	{
-		alert('변경사항이 없습니다.');
-		return;
-	}
-
-	SaveBtn();
+	
 });
 
 // 저장
@@ -906,7 +918,8 @@ function SaveBtn()
 			    }
 		});
 		
-		set_Loading('hide');
+		//set_Loading('hide');
+		isDisabled = true;
 		
 		if (save_result.result == 1){
 			alert('신청 되었습니다. 조회화면으로 이동합니다.');
