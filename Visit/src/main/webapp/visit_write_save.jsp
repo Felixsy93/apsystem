@@ -96,8 +96,8 @@
 		}
 		
 		HttpConnection http = new HttpConnection();
-		//String url = "https://vst.apsfamily.com/util/visit_interface.aspx?sp_name=dbo.sp_visit_interface_save&if_vst_code=" + if_vst_code +"&if_flag=" + if_flag;
 		String url = "http://10.1.1.89:55531/util/visit_interface.aspx?sp_name=dbo.sp_visit_interface_save&if_vst_code=" + if_vst_code +"&if_flag=" + if_flag;
+		//String url = "https://tis.apsfamily.com/util/visit_interface.aspx?sp_name=dbo.sp_visit_interface_save&if_vst_code=" + if_vst_code +"&if_flag=" + if_flag;
 		String if_result = http.sendGet(url);	
 		
 		JSONParser parser = new JSONParser();

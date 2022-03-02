@@ -309,7 +309,7 @@
 					</div>
 					<div class="row">
 						<div class="col">
-							<a id="dent_inoutlist" class="btn btn-success" style="display:none; font-size:0.9em; color:white;" href="https://vst.apsfamily.com//uploadfile/vst/DENT_InoutList.xlsx" target="_blank">자재(공구) 반입.반출 확인서</a>
+							<a id="dent_inoutlist" class="btn btn-success" style="display:none; font-size:0.9em; color:white;" href="https://tis.apsfamily.com//uploadfile/vst/DENT_InoutList.xlsx" target="_blank">자재(공구) 반입.반출 확인서</a>
 							<span id="write-desc-out3" class="write-desc-out" style="display:none;">※ 자재(공구) 반입 시 확인서 작성 후 보안실 제출(필수)</span>		
 						</div>
 					</div>

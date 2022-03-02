@@ -8,7 +8,7 @@ $('#btn_insert').on('click', function ()
 // 임직원로그인 버튼
 $('#btn_login').on('click', function ()
 {
-	location.href = 'https://vst.apsfamily.com';
+	location.href = 'https://tis.apsfamily.com';
 });
 
 // 신청조회 버튼
