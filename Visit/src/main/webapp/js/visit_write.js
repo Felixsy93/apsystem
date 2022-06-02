@@ -761,8 +761,8 @@ function SaveBtn()
 				save_data = $(save_obj).val();
 			}
 			
-			// 차량유무가 Y일 경우 차종, 차량번호 체크
-			if (save_id == 'vst_car_type' || save_id == 'vst_car_num')
+			// 차량유무가 Y일 경우 차량번호 체크
+			if (save_id == 'vst_car_num')
 			{
 				var save_chk_obj = '#vst_car_yn_' + m;
 				if ($(save_chk_obj).val() == 'Y')

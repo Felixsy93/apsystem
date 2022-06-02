@@ -18,7 +18,7 @@ public class MariaDB {
 	public void DBconnect() {
 		         
         try {
-        	 /*
+        	/*
              * 1. 드라이버 로딩
              * 드라이버 인터페이스를 구현한 클래스를 로딩합니다.
              * mysql, oracle 등 각 데이터베이스마다 클래스 이름이 다릅니다.
@@ -30,7 +30,7 @@ public class MariaDB {
              * 드라이버 매니저에게 Connection 객체를 달라고 요청합니다.
              * url은 mariadb 연결 url이고, id와 pw는 각각 데이터베이스의 아이디, 비밀번호 입니다.
              */
-            String url = "jdbc:mariadb://10.1.1.179/VISIT_APS";
+            String url = "jdbc:mariadb://10.1.1.185/VISIT_APS";
             String id = "itadmin";
             String pw = "ap2734!@#";
             conn = DriverManager.getConnection(url, id, pw);
