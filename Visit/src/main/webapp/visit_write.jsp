@@ -472,8 +472,8 @@
 		</div>
 	</div>
 
-	<script src="js/comm_api.js"></script> 
-	<script src="js/visit_write.js"></script>
+	<script src="js/comm_api.js?ver=20220603"></script> 
+	<script src="js/visit_write.js?ver=20220603"></script>
 	<script type="text/javascript">
 	
 		var m_mode = '<%=m_sMode%>';
