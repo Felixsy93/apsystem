@@ -12,8 +12,8 @@
 <link href="Vender/jquery/jquery-ui-1.11.0.css" rel="stylesheet" />
 <link href="Vender/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 <!-- comm -->
-<link rel="stylesheet" href="css/vst_aps.css">
-<link rel="stylesheet" href="css/comm_aps.css">
+<link rel="stylesheet" href="css/vst_aps.css?ver=20220603">
+<link rel="stylesheet" href="css/comm_aps.css?ver=20220603">
 
 <script src="Vender/jquery/jquery-1.11.0.min.js"></script>
 <script src="Vender/jquery/jquery-ui-1.11.0.min.js"></script>

@@ -1,6 +1,6 @@
-ï»¿/*
-ì‚¬ìš©ì²˜
-Main Master í˜ì´ì§€
+/*
+»ç¿ëÃ³
+Main Master ÆäÀÌÁö
 */
 
 input[type=text]::-ms-clear {display: none;}
@@ -22,7 +22,7 @@ input[type=text]::-ms-clear {display: none;}
 	padding:.7rem .7rem .2rem .7rem;
 }
 
-/* ì‚¬ìš©ìì •ë³´ */
+/* »ç¿ëÀÚÁ¤º¸ */
 .pop-user
 {
 	border: 1px solid lightgray;
@@ -44,7 +44,7 @@ input[type=text]::-ms-clear {display: none;}
 	background-color: #f0f0f0;
 }
 
-/* ì¡°íšŒì¡°ê±´ */
+/* Á¶È¸Á¶°Ç */
 .table-search
 {
 	/*border-bottom: 1px solid #dee2e6;*/
@@ -75,7 +75,7 @@ input[type=text]::-ms-clear {display: none;}
 	background-color: mistyRose;
 }
 
-/* ë°ì´í„° */
+/* µ¥ÀÌÅÍ */
 .frm-table
 {
 	border: 0;
@@ -162,7 +162,7 @@ input[type=text]::-ms-clear {display: none;}
 }
 
 
-/* ì½”ë“œí—¬í”„ ì»¬ëŸ¼ */
+/* ÄÚµåÇïÇÁ ÄÃ·³ */
 .code-help
 {
 	background-color: skyblue;
@@ -191,7 +191,7 @@ input.code-help-place:-ms-input-placeholder
 	/*background-color:#E9ECEF;*/
 }
 
-/* ì²¨ë¶€íŒŒì¼ */
+/* Ã·ºÎÆÄÀÏ */
 .file-table
 {
 	border-bottom: 1px solid lightgray;
@@ -270,7 +270,7 @@ input.code-help-place:-ms-input-placeholder
 
 .load-img
 {
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 50%;
 	z-index: 1;
