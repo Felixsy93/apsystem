@@ -443,7 +443,7 @@
 					<!-- 보안물품 Start -->
 					<div class="mb-2">
 						<button name="btn_goods_1" id="btn_goods_1" type="button" class="btn btn-sm btn-outline-secondary mb-2" onclick="SetModalOpen(1)"><i class="fa fa-laptop"></i> 보안물품등록</button>
-						<span id="write-desc-out1" class="write-desc-out">※ AP시스템 본사(동탄1사업장) 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착</span>
+						<span id="write-desc-out1" class="write-desc-out">※ 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착</span>
 						<span id="write-desc-out2" class="write-desc-out" style="display:none;">※ 디이엔티 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착(화학물질 반입 시 필수 사전등록)</span><br />
 						<div style="display:none;">
 							<input name="goods_cnt_1" id="goods_cnt_1" type="text" />
@@ -473,7 +473,7 @@
 	</div>
 
 	<script src="js/comm_api.js?ver=20220603"></script> 
-	<script src="js/visit_write.js?ver=20220603"></script>
+	<script src="js/visit_write.js?ver=20220607"></script>
 	<script type="text/javascript">
 	
 		var m_mode = '<%=m_sMode%>';

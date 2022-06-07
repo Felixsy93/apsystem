@@ -482,8 +482,7 @@ function vstAdd()
 	if($('#corp_no').val() == '22')
 		desc_text = '※ 디이엔티 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착(화학물질 반입 시 필수 사전등록)';
 	else
-		desc_text = '※ AP시스템 본사(동탄1사업장) 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착';
-	
+		desc_text = '※ 방문 시 핸드폰,카메라,노트북,테블릿PC 등 봉인지 부착';
 	
 	var vst_html =
 		'<div id="vst_' + m_max_num + '" class="grp-box">' +
