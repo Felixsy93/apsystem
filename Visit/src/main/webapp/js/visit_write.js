@@ -542,7 +542,7 @@ function vstAdd()
 						'</select>' +
 					'</div>' +
 				'</div>' +
-				'<div class="write-title">' +
+				'<div class="write-title" style="display:none">' +
 					'<div class="input-group input-group-sm">' +
 						'<div class="input-group-prepend">' +
 							'<span class="input-group-text label-title">차종</span>' +
