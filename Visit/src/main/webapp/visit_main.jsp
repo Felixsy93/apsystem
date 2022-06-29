@@ -1,3 +1,4 @@
+<%@page import="java.io.Console"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import = "db.*"%>
 <%@ page import = "java.util.*"%>
@@ -51,6 +52,10 @@
 					<div class="card-body">
 						<div id="grd_Notice"></div>
 						<%
+						// 배열 생성
+						String[] str = new String[5];
+						StringBuilder sb = new StringBuilder("");
+								
 						for(int i = 0; i < notice_list.size(); i++){
 						%>
 							<div class="col mb-2 border-bottom pt-1 pb-2">
@@ -58,8 +63,12 @@
 								<%=notice_list.get(i).getNotice_title() %>
 								<%
 								if(notice_list.get(i).getNotice_popup().equals("Y")){
-									popup_yn = "Y";
 									popup_notice_code = notice_list.get(i).getNotice_code();
+									
+									// 문자열 저장
+									str[i]= popup_notice_code;	
+									sb.append(str[i]);
+									sb.append(",");
 								}
 								if (notice_list.get(i).getNew_yn() == 1) { 
 								%>
@@ -70,6 +79,11 @@
 								</div>
 							</div>
 						<%
+						}
+
+						// 맨마지막 문자열 삭제
+						if(!sb.toString().equals("")){
+							sb.setLength(sb.length() - 1);
 						}
 						%>
 					</div>
@@ -109,13 +123,15 @@
 	
 	// Main page 팝업
 	$(document).ready(function (){
-
-		var popup_yn = '<%=popup_yn %>';
-		var popup_notice_code = '<%=popup_notice_code %>';
+		var popup = '<%=sb.toString() %>';
 		
-		if(popup_yn == 'Y'){
-			boardClick('n', popup_notice_code);
+		if(popup != "")
+		{
+			var popupArr = popup.split(",");
+			for(i = 0; i < popupArr.length; i++)
+				boardClick('n', popupArr[i])
 		}
+		
 	});
 	
 	</script>
