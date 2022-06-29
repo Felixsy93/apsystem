@@ -51,6 +51,6 @@ function boardClick(p_type, p_code)
 	popup_param.push(['dtl_code', p_code]);
 
 	if (board_url != ''){
-		OpenPopup(board_url, board_title, popup_param);
+		OpenPopup(board_url, board_title, popup_param, 820, 800);
 	}
 }

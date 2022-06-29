@@ -103,8 +103,8 @@
 		<!-- List End -->
 	</div>
 
-	<script src="js/comm_api.js"></script> 
-	<script src="js/visit_main.js"></script> 
+	<script src="js/comm_api.js?ver=20220629"></script> 
+	<script src="js/visit_main.js?ver=20220629"></script> 
 	<script type="text/javascript">
 	
 	// Main page 팝업
