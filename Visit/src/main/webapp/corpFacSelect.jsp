@@ -3,7 +3,7 @@
 <%@ page import = "java.util.*"%>
 <%
 	String corp_no = (String)request.getParameter("corp_no");
-	String sql = "SELECT * FROM TSsm_Code WHERE s_id = 'VST_CORP_FAC' AND s_val1 = " +"'"+ corp_no +"' ORDER BY sort_no";
+	String sql = "SELECT * FROM TSsm_Code WHERE s_id = 'VST_CORP_FAC' AND use_yn = 'Y' AND s_val1 = " +"'"+ corp_no +"' ORDER BY sort_no";
 	
 	try {
 		MariaDB md = new MariaDB();
